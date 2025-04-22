@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: instalar compilador GCC
-      run: sudo apt update && sudo apt install buid-essential -y
+      run: sudo apt update && sudo apt install build-essential -y
 
     - name: compilar o programa
       run: gcc GitHub.c -o programa
