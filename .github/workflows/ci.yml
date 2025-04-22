@@ -1,0 +1,26 @@
+name: CI para C
+
+on:
+  push:
+
+jobs:
+  buid:
+    runs-on: obuntu-latest
+
+      steps:
+        -name: clonar o repositório
+         uses: actions/ checkout@v3
+
+        -name: instalar compilador GCC
+         run: sudo apt update && sudo apt install buid-essential -y
+
+        -name: compilar o programa
+         run: gcc GitHub.c -o programa
+
+         -name: Executar o programa
+          run: ./programa
+
+         -name: Executar o programa
+         run: 
+           gcc -o teste.c
+            ./teste
