@@ -7,7 +7,7 @@ void testar(){
 }
 
 int main(){
-  testar()
+  testar();
   return 0;
 }
 
